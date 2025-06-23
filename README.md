@@ -2,7 +2,7 @@
 
 This project provides a Python utility for downloading and cropping **daily precipitation data** from the [NASA GPM IMERG Final Run Dataset (GPM_3IMERGDF)](https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDF_07/summary) for a specific country or region.
 
-It uses NASA's authenticated API to fetch `.nc4` NetCDF4 files, extracts only the specified geographic region, and stores the output in a local folder for further use in climate studies, hydrological modeling, agriculture, or machine learning.
+It uses NASA's authenticated API to fetch `.nc4` NetCDF4 files, extracts only the specified geographic region, and stores the output in a local folder for further use in climate studies.
 
 ---
 
