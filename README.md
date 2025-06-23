@@ -6,7 +6,7 @@ It uses NASA's authenticated API to fetch `.nc4` NetCDF4 files, extracts only th
 
 ---
 
-## 🌍 What This Project Does
+## What This Project Does
 
 - Downloads **daily precipitation data** from NASA's GESDISC archive.
 - Crops the data to a given **latitude/longitude box** (e.g. your country).
@@ -34,7 +34,7 @@ Files and Structure
 
 
 Environment Configuration
-# 🔐 NASA Earthdata Login Credentials
+# NASA Earthdata Login Credentials
 # These are required to authenticate your downloads from the GESDISC archive.
 # Get these by registering at: https://urs.earthdata.nasa.gov
 GESDISC_USERNAME=your_nasa_earthdata_username
@@ -44,7 +44,7 @@ GESDISC_TOKEN=your_nasa_earthdata_token
 # This URL points to the top-level directory where all daily data is stored.
 BASE_URL=https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/GPM_3IMERGDF.07
 
-# 🌍 The name of your target country or region
+# The name of your target country or region
 # This will be used in the output filenames for clarity.
 COUNTRY_NAME=Kenya
 
@@ -61,7 +61,7 @@ LAT_SOUTH=-5.0  # Southernmost latitude
 LON_EAST=42.0   # Easternmost longitude
 LON_WEST=33.0   # Westernmost longitude
 
-# 📁 Local folder where downloaded and processed files will be stored
+# Local folder where downloaded and processed files will be stored
 # This folder will be created if it doesn't exist.
 OUTPUT_DIR=imerg_data
 
