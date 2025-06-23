@@ -1,0 +1,4 @@
+xarray
+requests
+netcdf4
+python-dotenv
