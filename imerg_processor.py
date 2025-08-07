@@ -22,8 +22,6 @@ class ImergProcessor:
         self.existing_files = set(file_list)  # Use a set for fast membership checks
         print(f"Found {len(self.existing_files)} existing files in repo.")
 
-        print("Auth username:", self.auth[0])
-        print("Auth password:", (self.auth[1]))
 
     def run(self, lat_north, lat_south, lon_east, lon_west):
         for date in self._date_range():
