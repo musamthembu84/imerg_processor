@@ -34,10 +34,10 @@ def main():
         start_date="2022-01-01",
         end_date="2022-01-10",
         base_url="https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/GPM_3IMERGDF.07",
-        auth=("musamthembu84", "Recycle22@22"),
+        auth=("random", "random"),
         country_name="Kenya",
-        repo_id="musamthembu84/imerg",
-        hf_token="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"
+        repo_id="random",
+        hf_token="removetokens"
     )
 
     processor.run(
