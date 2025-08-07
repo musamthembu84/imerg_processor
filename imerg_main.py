@@ -1,17 +1,18 @@
 import os
 from dotenv import load_dotenv
-from  imerg_processor import ImergProcessor
+from imerg_processor import ImergProcessor
+
 
 def main():
     load_dotenv()
-
-    processor = ImergProcessor (
-        start_date = os.getenv("START_DATE"),
-        end_date = os.getenv("END_DATE"),
+    processor = ImergProcessor(
+        start_date=os.getenv("START_DATE"),
+        end_date=os.getenv("END_DATE"),
         base_url=os.getenv("BASE_URL"),
         auth=(os.getenv("GESDISC_USERNAME"), os.getenv("GESDISC_TOKEN")),
         country_name=os.getenv("COUNTRY_NAME"),
-        output_dir=os.getenv("OUTPUT_DIR", "imerg_data") 
+        repo_id=os.getenv("HF_REPO_ID"),
+        hf_token=os.getenv("HF_TOKEN")
     )
 
     processor.run(
@@ -21,5 +22,6 @@ def main():
         lon_west=float(os.getenv("LON_WEST")),
     )
 
+
 if __name__ == "__main__":
-    main()    
+    main()
